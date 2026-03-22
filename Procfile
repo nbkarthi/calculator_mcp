@@ -1,1 +1,1 @@
-uv run uvicorn main:app --host 0.0.0.0 --port $PORT
+web: uv run python calculator_server_remote.py
