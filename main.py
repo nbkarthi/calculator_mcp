@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent
 
 def main() -> None:
     load_dotenv(ROOT / ".env")
-    key = os.environ.get("OPENAI_API_KEY")
+    key = os.environ.get("OPENAI_API_KEY","TEST")
     if not key:
         sys.exit("Missing OPENAI_API_KEY (set in .env or the environment).")
 
